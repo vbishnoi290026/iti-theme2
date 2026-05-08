@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Govt. ITI Chhattargarh Bikanervikas </title>
+    <title>Govt. ITI Chhattargarh Bikaner</title>
     
     <!-- Modern Google Fonts: Poppins for headings, Inter for text -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -148,7 +148,6 @@
             color: white;
             max-width: 800px;
             margin-top: 60px;
-            /* Glassmorphism Card for Text */
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             padding: 3rem;
@@ -214,11 +213,10 @@
         .section-subtitle { color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.5rem; }
         .section-title { font-size: 2.5rem; color: var(--text-main); font-weight: 700; }
 
-        /* Scroll Animation Classes */
         .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s all ease-in-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
-        /* --- About Section (Grid Layout) --- */
+        /* --- About Section --- */
         .about-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
         }
@@ -249,7 +247,7 @@
         .experience-badge h3 { color: var(--primary); font-size: 2rem; }
         .experience-badge p { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
 
-        /* --- Trades Section (Modern Cards) --- */
+        /* --- Trades Section --- */
         #trades { background-color: var(--surface); max-width: 100%; padding: 6rem 5%; }
         .trades-container { max-width: 1200px; margin: 0 auto; }
         
@@ -298,7 +296,7 @@
 
         .trade-card p { font-size: 0.9rem; color: var(--text-muted); transition: var(--transition); }
 
-        /* --- Contact & Location (Split View) --- */
+        /* --- Contact & Location --- */
         .contact-wrapper {
             display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
             background: var(--surface); padding: 3rem; border-radius: var(--radius-lg);
@@ -325,10 +323,12 @@
 
         .contact-info-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem; }
         .info-card {
-            display: flex; align-items: center; gap: 15px; padding: 1.5rem;
+            display: flex; align-items: center; gap: 15px; padding: 1.2rem;
             background: var(--bg-color); border-radius: var(--radius-sm);
         }
-        .info-card i { font-size: 1.5rem; color: var(--primary); }
+        .info-card i { font-size: 1.5rem; color: var(--primary); width: 30px; text-align: center; }
+        .info-card h4 { font-size: 1rem; color: var(--text-main); margin-bottom: 2px;}
+        .info-card p { font-size: 0.9rem; color: var(--text-muted); }
 
         /* --- Footer --- */
         footer {
@@ -336,7 +336,7 @@
         }
         .footer-logo {
             font-size: 1.5rem; color: white; font-family: 'Poppins', sans-serif;
-            font-weight: 700; margin-bottom: 1rem; display: inline-block;
+            font-weight: 700; margin-bottom: 1rem; display: inline-block; text-decoration: none;
         }
         .footer-bottom {
             margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem;
@@ -391,8 +391,8 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <span class="badge-top"><i class="fas fa-award"></i> Govt. Recognized</span>
-            <h1>Shape Your Future with Technical Excellence</h1>
-            <p>Govt. ITI Chhattargarh, Bikaner offers industry-ready vocational training and skill development programs to build a brighter career.</p>
+            <h1>Govt. ITI Chhattargarh Bikaner</h1>
+            <p>Shape your future with industry-ready vocational training and technical excellence to build a brighter career.</p>
             <a href="#trades" class="btn">
                 Explore Trades <i class="fas fa-arrow-right"></i>
             </a>
@@ -414,10 +414,9 @@
                 </ul>
             </div>
             <div class="about-image">
-                <!-- Stock image representing engineering/students -->
                 <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ITI Students working">
                 <div class="experience-badge">
-                    <h3>10+</h3>
+                    <h3>9+</h3>
                     <p>Trades Available</p>
                 </div>
             </div>
@@ -433,7 +432,7 @@
             </div>
 
             <div class="trade-grid">
-                <!-- Trade Card 1 -->
+                <!-- Trade: Electrician -->
                 <div class="trade-card">
                     <div class="trade-icon"><i class="fas fa-plug"></i></div>
                     <h3>Electrician</h3>
@@ -443,7 +442,7 @@
                     <p><strong>Eligibility:</strong> 10th Pass with Science & Math.</p>
                 </div>
 
-                <!-- Trade Card 2 -->
+                <!-- Trade: Fitter -->
                 <div class="trade-card">
                     <div class="trade-icon"><i class="fas fa-tools"></i></div>
                     <h3>Fitter</h3>
@@ -453,7 +452,7 @@
                     <p><strong>Eligibility:</strong> 10th Pass with Science & Math.</p>
                 </div>
 
-                <!-- Trade Card 3 -->
+                <!-- Trade: COPA -->
                 <div class="trade-card">
                     <div class="trade-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>COPA</h3>
@@ -463,7 +462,7 @@
                     <p><strong>Eligibility:</strong> 10th Pass. Computer Operator & Programming Assistant.</p>
                 </div>
 
-                <!-- Trade Card 4 -->
+                <!-- Trade: Welder -->
                 <div class="trade-card">
                     <div class="trade-icon"><i class="fas fa-fire-burner"></i></div>
                     <h3>Welder</h3>
@@ -473,7 +472,7 @@
                     <p><strong>Eligibility:</strong> 8th Pass / 10th Pass.</p>
                 </div>
 
-                <!-- Trade Card 5 -->
+                <!-- Trade: Diesel Mechanic -->
                 <div class="trade-card">
                     <div class="trade-icon"><i class="fas fa-truck-moving"></i></div>
                     <h3>Diesel Mechanic</h3>
@@ -483,20 +482,50 @@
                     <p><strong>Eligibility:</strong> 10th Pass with Science & Math.</p>
                 </div>
 
-                <!-- Trade Card 6 -->
+                <!-- Trade: R&AC (New) -->
                 <div class="trade-card">
-                    <div class="trade-icon"><i class="fas fa-faucet-drip"></i></div>
-                    <h3>Plumber</h3>
+                    <div class="trade-icon"><i class="fas fa-snowflake"></i></div>
+                    <h3>R&AC</h3>
+                    <div class="trade-info">
+                        <span class="badge"><i class="far fa-clock"></i> 2 Years</span>
+                    </div>
+                    <p><strong>Eligibility:</strong> 10th Pass. Refrigeration & Air Conditioning Technician.</p>
+                </div>
+
+                <!-- Trade: Cosmetology (New) -->
+                <div class="trade-card">
+                    <div class="trade-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Cosmetology</h3>
                     <div class="trade-info">
                         <span class="badge"><i class="far fa-clock"></i> 1 Year</span>
                     </div>
-                    <p><strong>Eligibility:</strong> 8th Pass / 10th Pass.</p>
+                    <p><strong>Eligibility:</strong> 10th Pass. Basic Cosmetology and beauty culture.</p>
+                </div>
+
+                <!-- Trade: Solar Technician (New) -->
+                <div class="trade-card">
+                    <div class="trade-icon"><i class="fas fa-solar-panel"></i></div>
+                    <h3>Solar Technician</h3>
+                    <div class="trade-info">
+                        <span class="badge"><i class="far fa-clock"></i> 1 Year</span>
+                    </div>
+                    <p><strong>Eligibility:</strong> 10th Pass. Installation and maintenance of solar systems.</p>
+                </div>
+
+                <!-- Trade: ICTSM (New) -->
+                <div class="trade-card">
+                    <div class="trade-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>ICTSM</h3>
+                    <div class="trade-info">
+                        <span class="badge"><i class="far fa-clock"></i> 2 Years</span>
+                    </div>
+                    <p><strong>Eligibility:</strong> 10th Pass. Information & Communication Technology System Maintenance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Location (Combined Split Section) -->
+    <!-- Contact & Location -->
     <section id="contact" class="reveal">
         <div class="section-header">
             <span class="section-subtitle">Get In Touch</span>
@@ -507,11 +536,28 @@
             <!-- Left Side: Form & Info -->
             <div class="contact-form-area">
                 <div class="contact-info-cards">
+                    <!-- Address Info -->
                     <div class="info-card">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Address</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">Chhattargarh, Bikaner, Rajasthan</p>
+                            <h4>Institute Location</h4>
+                            <p>Chhattargarh, Bikaner, Rajasthan</p>
+                        </div>
+                    </div>
+                    <!-- Principal Info -->
+                    <div class="info-card">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <h4>Principal: Gourav Fulwariya</h4>
+                            <p>+91 9462361765</p>
+                        </div>
+                    </div>
+                    <!-- Email Info -->
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>iti.chattergarh@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -527,7 +573,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" class="form-control" rows="4" required placeholder="I am interested in the COPA trade..."></textarea>
+                        <textarea id="message" class="form-control" rows="4" required placeholder="I am interested in admission details..."></textarea>
                     </div>
                     <button type="submit" class="btn" style="width: 100%; justify-content: center; border: none; cursor:pointer;">
                         Send Inquiry <i class="fas fa-paper-plane"></i>
@@ -547,10 +593,10 @@
 
     <!-- Footer -->
     <footer>
-        <a href="#" class="footer-logo">Govt. ITI Chhattargarh</a>
+        <a href="#" class="footer-logo">Govt. ITI Chhattargarh Bikaner</a>
         <p>Empowering the youth with industry-focused technical and vocational training.</p>
         <div class="footer-bottom">
-            <p>&copy; 2024 Govt. ITI Chhattargarh Bikaner. All Rights Reserved.</p>
+            <p>&copy; 2026 Govt. ITI Chhattargarh Bikaner. | Design & Develop By Vikash Kumar | All Rights Reserved.</p>
         </div>
     </footer>
 
